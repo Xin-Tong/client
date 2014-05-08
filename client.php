@@ -1,5 +1,6 @@
-#! /usr/bin/php
- <?php
+#!/usr/bin/php
+
+<?php
    
    $ch = curl_init();
    
@@ -53,5 +54,5 @@ if(isset($arguments['p'])){
   curl_close($ch);
   echo $resp;
   
- ?>
+?>
 
