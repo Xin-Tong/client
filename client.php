@@ -8,7 +8,7 @@
    
    if(isset($arguments['h']))
        $host = $arguments['h']; 
- //  $method = 'get';
+//   $method = 'get';
     $url="http://$host/openphoto.php?";  
 if(isset($arguments['o'])){
       $operation = $arguments['o'];
@@ -36,7 +36,7 @@ $url .= "consumerKey=$consumerKey&";
 $url .= "consumerSecret=$consumerSecret&";
 $url .= "token=$token&";
 $url .= "tokenSecret=$tokenSecret";
-#echo $url . "\n";
+echo $url . "\n";
 
 
   curl_setopt($ch, CURLOPT_URL, $url);
